@@ -4,7 +4,8 @@
   "description": "Utility to calculate pace, average pace",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/pranavacharya/Pacecal/issues"
   },
-  "homepage": "https://github.com/pranavacharya/Pacecal#readme"
+  "homepage": "https://github.com/pranavacharya/Pacecal#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
 }
