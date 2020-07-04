@@ -12,7 +12,10 @@
     "url": "git+https://github.com/pranavacharya/Pacecal.git"
   },
   "keywords": [
-    "pace"
+    "pace",
+    "average pace",
+    "marathon",
+    "speed"
   ],
   "author": "Pranav Acharya <apranav.acharya@gmail.com>",
   "license": "MIT",
