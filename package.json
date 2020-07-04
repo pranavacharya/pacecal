@@ -1,0 +1,28 @@
+{
+  "name": "pacecal",
+  "version": "1.0.0",
+  "description": "Utility to calculate pace, average pace",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavacharya/Pacecal.git"
+  },
+  "keywords": [
+    "pace"
+  ],
+  "author": "Pranav Acharya <apranav.acharya@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pranavacharya/Pacecal/issues"
+  },
+  "homepage": "https://github.com/pranavacharya/Pacecal#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
