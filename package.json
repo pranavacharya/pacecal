@@ -1,6 +1,6 @@
 {
   "name": "pacecal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility to calculate pace, average pace",
   "main": "index.js",
   "scripts": {
