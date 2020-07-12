@@ -1,1 +1,1 @@
-module.exports = require('./src/pacecal');
+export * from './src/pacecal';
