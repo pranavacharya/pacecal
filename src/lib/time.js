@@ -19,4 +19,5 @@ function secondsToHMS(seconds) {
   return `${h}:${m}:${s}`;
 }
 
-module.exports = { secondsToHMS };
+// eslint-disable-next-line import/prefer-default-export
+export { secondsToHMS };

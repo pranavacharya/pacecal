@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const time = require('./lib/time');
+import { secondsToHMS } from './lib/time';
 
 /**
  * Function to calculate pace using distance and time
@@ -18,7 +18,7 @@ function getPace(d, t) {
  * @returns {string} pace in hours:minutes:seconds format
  */
 function getPaceInTime(d, t) {
-  return time.secondsToHMS(getPace(d, t));
+  return secondsToHMS(getPace(d, t));
 }
 
-module.exports = { getPace, getPaceInTime };
+export { getPace, getPaceInTime };

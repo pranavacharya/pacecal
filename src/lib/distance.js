@@ -16,4 +16,4 @@ function mileToKM(distance) {
   return distance * 1.609344;
 }
 
-module.exports = { kmToMile, mileToKM };
+export { kmToMile, mileToKM };
