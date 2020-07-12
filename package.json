@@ -37,6 +37,6 @@
     "rollup": "^2.21.0"
   },
   "files": [
-    "build"
+    "dist"
   ]
 }
