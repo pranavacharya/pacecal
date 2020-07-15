@@ -21,4 +21,26 @@ function getPaceInTime(d, t) {
   return secondsToHMS(getPace(d, t));
 }
 
-export { getPace, getPaceInTime };
+/**
+ * Function to calculate average pace
+ * @param {Array} array of pace
+ * @returns {number} pace int seconds/km
+ */
+function getAreragePace(pacearray) {
+  let sum = 0;
+  pacearray.forEach((pace) => {
+    sum += pace;
+  });
+  return sum / pacearray.length;
+}
+
+/**
+ * Function to calculate average pace
+ * @param {Array} array of pace
+ * @returns {string} pace in hours:minutes:seconds format
+ */
+function getAreragePaceinTime(pacearray) {
+  return secondsToHMS(getAreragePace(pacearray));
+}
+
+export { getPace, getPaceInTime, getAreragePace, getAreragePaceinTime };
