@@ -1,3 +1,18 @@
+const units = {
+  s: {
+    ratio: 1,
+    name: 'seconds'
+  },
+  min: {
+    ratio: 60,
+    name: 'minutes'
+  },
+  h: {
+    ratio: 3600,
+    name: 'hours'
+  }
+};
+
 /**
  * Function to convert seconds into HH:MM:SS format
  * @param {number} seconds
@@ -19,5 +34,26 @@ function secondsToHMS(seconds) {
   return `${h}:${m}:${s}`;
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export { secondsToHMS };
+/**
+ * Function to convert time unit
+ * @param {number} time in input unit
+ * @param {string} inputUnit
+ * @param {string} outputUnit
+ * @returns {number} time in output unit
+ */
+function convertUnit(time, inputUnit, outputUnit) {
+  let result = 0;
+  result = time * units[inputUnit].ratio;
+  result *= 1 / units[outputUnit].ratio;
+  return result;
+}
+
+/**
+ * Function to return list of available units for time
+ * @returns {Array} list of all the available units
+ */
+function listUnit() {
+  return Object.keys(units);
+}
+
+export { convertUnit, listUnit, secondsToHMS };
