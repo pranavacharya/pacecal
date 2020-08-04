@@ -19,18 +19,16 @@ const units = {
  * @returns {string} time in HH:MM:SS format
  */
 function secondsToHMS(seconds) {
-  let h = Math.floor(seconds / 3600);
-  let m = Math.floor((seconds % 3600) / 60);
-  let s = Math.floor((seconds % 3600) % 60);
-  if (h < 10) {
-    h = `0${h}`;
-  }
-  if (m < 10) {
-    m = `0${m}`;
-  }
-  if (s < 10) {
-    s = `0${s}`;
-  }
+  const h = Math.floor(seconds / 3600)
+    .toString()
+    .padStart(2, 0);
+  const m = Math.floor((seconds % 3600) / 60)
+    .toString()
+    .padStart(2, 0);
+  const s = Math.floor((seconds % 3600) % 60)
+    .toString()
+    .padStart(2, 0);
+
   return `${h}:${m}:${s}`;
 }
 
