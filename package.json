@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pranavacharya/Pacecal.git"
+    "url": "git+https://github.com/pranavacharya/pacecal.git"
   },
   "keywords": [
     "pace",
@@ -26,9 +26,9 @@
   "author": "Pranav Acharya <apranav.acharya@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pranavacharya/Pacecal/issues"
+    "url": "https://github.com/pranavacharya/pacecal/issues"
   },
-  "homepage": "https://github.com/pranavacharya/Pacecal#readme",
+  "homepage": "https://github.com/pranavacharya/pacecal#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
