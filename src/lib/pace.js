@@ -63,7 +63,7 @@ export default class Pace {
    * - s
    * - min
    * - h
-   * @retuns {this}
+   * @returns {this}
    */
   format(distanceUnit, timeUnit) {
     // convert distance unit from previous unit to new unit
