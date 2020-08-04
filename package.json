@@ -1,0 +1,42 @@
+{
+  "name": "pacecal",
+  "version": "1.2.0",
+  "description": "Utility to calculate pace, average pace",
+  "main": "./dist/pacecal.cjs.js",
+  "module": "./dist/pacecal.esm.js",
+  "browser": "./dist/pacecal.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavacharya/Pacecal.git"
+  },
+  "keywords": [
+    "pace",
+    "average pace",
+    "marathon",
+    "speed"
+  ],
+  "author": "Pranav Acharya <apranav.acharya@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pranavacharya/Pacecal/issues"
+  },
+  "homepage": "https://github.com/pranavacharya/Pacecal#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "rollup": "^2.21.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
