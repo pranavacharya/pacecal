@@ -16,12 +16,43 @@ describe('Pace Class', () => {
     expect(pace.pace).toBe(600);
   });
 
+  test('Class instance invalid args', () => {
+    expect(() => {
+      // eslint-disable-next-line no-unused-vars
+      const pace = new Pace(6);
+    }).toThrow(SyntaxError);
+    expect(() => {
+      // eslint-disable-next-line no-unused-vars
+      const pace = new Pace();
+    }).toThrow(SyntaxError);
+  });
+
+  test('Class instance type check', () => {
+    expect(() => {
+      // eslint-disable-next-line no-unused-vars
+      const pace = new Pace('6', 3600);
+    }).toThrow(TypeError);
+
+    expect(() => {
+      // eslint-disable-next-line no-unused-vars
+      const pace = new Pace(6, '3600');
+    }).toThrow(TypeError);
+  });
+
   test('Class instance options', () => {
     const pace = new Pace(6, 3600, { distanceUnit: 'mi', timeUnit: 'min' });
     expect(pace.distance).toBe(9.65604);
     expect(pace.time).toBe(216000);
     expect(pace.timeUnit).toBe('s');
     expect(pace.distanceUnit).toBe('km');
+  });
+
+  test('Class instance options invalid', () => {
+    expect(() => {
+      // invalid distanceUnit
+      // eslint-disable-next-line no-unused-vars
+      const pace = new Pace(6, 3600, { distanceUnit: 'm', timeUnit: 'min' });
+    }).toThrow(TypeError);
   });
 
   test('getPace method', () => {
