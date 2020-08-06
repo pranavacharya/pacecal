@@ -1,11 +1,8 @@
 import { listUnit, convertUnit } from '../src/lib/time';
 
 describe('Time', () => {
-  test('list units typeof', () => {
+  test('list units', () => {
     expect(typeof listUnit()).toBe('object');
-  });
-
-  test('list units values', () => {
     expect(listUnit()).toEqual(['s', 'min', 'h']);
   });
 

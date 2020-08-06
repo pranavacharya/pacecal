@@ -70,10 +70,11 @@ describe('Pacecal', () => {
   });
 
   test('getAreragePace', () => {
-    expect(getAreragePace([540, 480, 420])).toBe(480);
+    expect(getAreragePace([542, 482, 427])).toBeCloseTo(483.66, 1);
   });
 
   test('getAreragePaceinTime', () => {
+    expect(typeof getAreragePaceinTime([40, 480, 420])).toBe('string');
     expect(getAreragePaceinTime([40, 480, 420])).toBe('00:05:13');
   });
 });
