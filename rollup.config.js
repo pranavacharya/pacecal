@@ -16,7 +16,7 @@ export default [
   {
     input: './index.js',
     output: [
-      { file: pkg.main, format: 'cjs', plugins: [terser()] },
+      { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'esm', plugins: [terser()] }
     ]
   }
