@@ -1,4 +1,8 @@
 const units = {
+  m: {
+    ratio: 0.001,
+    name: 'metre'
+  },
   mi: {
     ratio: 1.60934,
     name: 'miles'
