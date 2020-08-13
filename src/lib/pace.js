@@ -26,7 +26,7 @@ export default class Pace {
    * - available units: "km", "mi"
    * @param {String} [optional.timeUnit] - unit of time
    * - default unit: s
-   * - available units: "s", "min" , "h"
+   * - available units: "ms", "s", "min" , "h"
    */
   constructor(
     distance = throwParamRequiredError('distance'),
@@ -75,6 +75,7 @@ export default class Pace {
    * - mi
    * @param {string} timeUnit
    *  Available units
+   * - ms
    * - s
    * - min
    * - h
