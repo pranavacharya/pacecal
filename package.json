@@ -1,6 +1,6 @@
 {
   "name": "pacecal",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Utility to calculate pace, average pace",
   "main": "./dist/pacecal.cjs.js",
   "module": "./dist/pacecal.esm.js",
