@@ -51,7 +51,7 @@ describe('Pace Class', () => {
     expect(() => {
       // invalid distanceUnit
       // eslint-disable-next-line no-unused-vars
-      const pace = new Pace(6, 3600, { distanceUnit: 'm', timeUnit: 'min' });
+      const pace = new Pace(6, 3600, { distanceUnit: 'yard', timeUnit: 'min' });
     }).toThrow(TypeError);
   });
 

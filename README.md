@@ -105,6 +105,7 @@ pace.format('km', 'min').getPaceTimeString(); // 00:06:00
 
 ##### Distance
 
+- m - metre
 - km - kilometers
 - mi - miles
 

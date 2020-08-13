@@ -23,7 +23,7 @@ export default class Pace {
    * @param {Object} [optional] - optional params
    * @param {String} [optional.distanceUnit] - unit of distance
    * - default unit: km
-   * - available units: "km", "mi"
+   * - available units: "m", "km", "mi"
    * @param {String} [optional.timeUnit] - unit of time
    * - default unit: s
    * - available units: "ms", "s", "min" , "h"
@@ -71,6 +71,7 @@ export default class Pace {
    * - default unit - s/km
    * @param {string} distanceUnit
    *  Available units
+   * - m
    * - km
    * - mi
    * @param {string} timeUnit
