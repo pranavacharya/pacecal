@@ -1,4 +1,8 @@
 const units = {
+  ms: {
+    ratio: 0.001,
+    name: 'miliseconds'
+  },
   s: {
     ratio: 1,
     name: 'seconds'
