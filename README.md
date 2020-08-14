@@ -114,7 +114,7 @@ pace.format('km', 'min').getPaceTimeString(); // 00:06:00
 - ms - milliseconds
 - s - seconds
 - min - minutes
-- hr - hours
+- h - hours
 
 ### **_Deprecated functions_**
 
